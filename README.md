@@ -1,59 +1,82 @@
 # Filmly
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.21.
+Filmly — это учебный проект поисковика фильмов и сериалов, разработанный в рамках курса по Angular 21 в школе *
+*[PurpleSchool](https://purpleschool.ru/)**.
 
-## Development server
+> 🎬 **О проекте**  
+> Приложение позволяет искать фильмы по названию, фильтровать результаты по жанрам и дате выхода, а также добавлять
+понравившиеся фильмы в избранное. Проект создан для изучения основ фронтенд-разработки на Angular и работы с API.
 
-To start a local development server, run:
+---
 
-```bash
-ng serve
-```
+## 🚀 Функциональность
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+### 🔐 Авторизация
 
-## Code scaffolding
+- Страница входа с полями email и пароль
+- Валидация данных на стороне клиента
+- Редирект на главную страницу после успешного входа
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+### 🏠 Главная страница
 
-```bash
-ng generate component component-name
-```
+- Поиск фильмов по названию
+- Фильтрация результатов:
+    - По жанру
+    - По дате выхода
+- Сортировка результатов по различным критериям
+- Отображение рейтинга фильмов
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+### 🎯 Работа с API
 
-```bash
-ng generate --help
-```
+- Взаимодействие с API для поиска фильмов по названию
+- Полученные данные отображаются, включая рейтинг фильма
 
-## Building
+### ⭐ Избранное
 
-To build the project run:
+- Возможность добавлять фильмы в избранное
+- Отдельный раздел для просмотра избранного
+- Управление коллекцией (добавление/удаление)
 
-```bash
-ng build
-```
+---
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+## 🛠️ Стек технологий
 
-## Running unit tests
+| Технология         | Назначение |
+|--------------------|------------|
+| **Angular**        | Основной фреймворк |
+| **Angular CLI**    | Инструмент для разработки и сборки |
+| **ESLint / Prettier** | Линтинг и форматирование кода |
+| **TypeScript**     | Типизация и современный JavaScript |
+| **RxJS**           | Реактивное программирование, работа с асинхронными потоками |
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+---
 
-```bash
-ng test
-```
+## 📦 Установка и запуск
 
-## Running end-to-end tests
+1. **Клонируйте репозиторий:**
+   ```bash
+   git clone https://github.com/your-username/filmly.git
+   cd filmly
+   ```
+   
+2. Установите зависимости:
+    ```bash
+    npm install
+    ```
+   
+3. Запустите проект:
+    ```bash
+    ng serve
+    ```
+   
+4. Откройте браузер и перейдите по адресу:
+    ```text
+    http://localhost:4200
+    ```
 
-For end-to-end (e2e) testing, run:
+---
 
-```bash
-ng e2e
-```
+## 📄 Лицензия
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Данный проект является учебным и не подлежит коммерческому использованию.
+Разработано в учебных целях в школе *[PurpleSchool](https://purpleschool.ru/)**.
